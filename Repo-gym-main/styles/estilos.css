@@ -49,9 +49,12 @@ main {
 .hero {
      
     
-    
+    background-image: url(../imagenes/gym-principal.webp);
+    background-size: cover;
+    height: 900px;
+    border:1px solid #0a0a0a;
+    border-radius: 20px;
     background-position: center;
-    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,9 +62,9 @@ main {
 }
 
 .hero-content {
-    background-image: url(../imagenes/gym.jfif);
+    
     background-size: cover;
-    /*background-color: rgba(255, 255, 255, 0.7); /* Blanco semitransparente */
+    background-color: rgba(255, 255, 255, 0.205); 
     padding: 40px;
     border-radius: 10px;
 }
@@ -76,6 +79,7 @@ main {
     font-size: 1.2em;
     margin-bottom: 30px;
     color: aliceblue;
+   
 }
 
 .cta-buttons {
@@ -94,7 +98,7 @@ main {
 }
 
 /* Estilos para la sección Features */
-#features {
+.features {
     text-align: center;
     margin-top: 40px;
 }
@@ -118,6 +122,12 @@ footer {
     background-color: #FFFFFF; /* Blanco */
     padding: 20px;
     text-align: center;
+}
+.iconos-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
 }
 
 /**ESTILOS PAGINA CLASES*/
@@ -184,4 +194,33 @@ footer {
     align-content: end;
     margin-bottom: 1rem;
 }
+/* estilos paginas entrenadores*/
 
+.entrenadores{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+
+}
+.card-staff{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(252, 252, 252);
+    padding: 1rem;
+    margin: 2rem;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.card-staff h3{
+    color: #333333;
+}
+.card-body{
+    color: #0a0a0a;
+}
+.card-staff img{
+    margin: 0 auto;
+}
