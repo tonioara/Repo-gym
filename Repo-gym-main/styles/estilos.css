@@ -149,6 +149,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: transform 1s ease;
 }
 .card-spinning{
     background-image: url(../imagenes/spinnig.jfif);
@@ -156,6 +157,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 .card-yoga{
     background-image: url(../imagenes/yoga.jfif);
