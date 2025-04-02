@@ -1,0 +1,21 @@
+//MIXIN//
+
+@mixin flex($direction,$justify,$align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin boder-shadow($boder,$raduis,$shadow){
+    border: $boder;
+    border-radius: $raduis;
+    box-shadow: $shadow;
+}/*
+@mixin medidas($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}*/
+@mixin mar-padd($marg,$padd){
+    margin: $marg;
+    padding: $padd;
+}

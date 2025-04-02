@@ -1,0 +1,30 @@
+/* estilos paginas contacto*/
+.main-nosotros{
+    text-align: center;
+    font-size: map-get($font-size, l );
+    font-style: italic ;
+    font-weight: 700;
+    color: map-get($colors, blanco);
+    .formulario-nos{
+        width: 50%;
+        @include flex(column,center,center);
+        justify-self: center;
+        border:3px solid #2b502b;
+        border-radius: 20px;
+        margin: 2rem;
+        form{
+            width: 90%;
+            display: inline;
+            @include flex(column,center,center);
+            gap: 1rem;
+            margin: 2rem;
+            input{
+                width: 50%;
+                height: 25px;
+            }
+            textarea{
+                width: 50%;
+            }
+        }
+    }
+}

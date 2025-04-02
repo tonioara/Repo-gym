@@ -1,0 +1,19 @@
+.entrenadores{
+    @include flex(row,center,center);
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 1rem;
+    .card-staff{
+        @include flex(column,center,center);
+        color: map-get($colors, negro );
+        border: 1px solid black;
+        border-radius: 20px;
+        @include mar-padd(2rem,1rem);
+        background-color: map-get($colors, blanco );
+        border: 1px solid black;
+        border-radius: 20px;
+        h3{
+            color: map-get($colors, grisoscuro);
+        }
+    }
+}

@@ -1,0 +1,9 @@
+footer{
+    background-color: map-get($colors, blanco );
+    padding: 20px;
+    text-align: center;
+    .iconos-logo{
+        @include flex(row,center,center);
+        gap: 1rem;
+    }
+}

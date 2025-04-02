@@ -1,0 +1,54 @@
+/* estilos a pagina tarifas*/
+.tarjetas-container{
+    @include flex(row,space-around,center);
+    flex-wrap: wrap;
+    .tarjeta{
+        justify-items: center;
+        border: 1px solid #ddd;
+        border-radius: 18px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        @include mar-padd(10px,1rem);
+        /*@include medidas(300px,);*/
+        width: 300px;
+        h2{
+            background-color: map-get($colors, grisclarito );
+            color: map-get($colors, blanco );
+            margin-bottom: 10px;
+            font-weight: bolder;
+        }
+        p{
+            color: map-get($colors, blanco );
+            line-height: 1.6;
+            font-weight: bolder; 
+        }
+        .tarj-paselibre{
+            background-image: url(../imagenes/gym.jfif);
+            background-position: center;
+            background-size: cover;
+            border: map-get($colors, verdeoscuro );
+            @include flex(column,center,center);
+            text-align:center;
+            .precio{
+                font-weight: bolder;
+                margin-top: 15px;
+                color: map-get($colors, blanco );
+                background-color: map-get($colors, grisclarito );
+            }
+        }
+        .tarj-crossfit{
+            @extend .tarj-paselibre;
+            background-image: url(../imagenes/crossfit.jfif);
+        }
+        .tarj-yoga{
+            @extend .tarj-paselibre;
+            background-image: url(../imagenes/yoga.jfif);
+        }
+    }
+
+    
+    
+    
+    
+    
+    
+}
